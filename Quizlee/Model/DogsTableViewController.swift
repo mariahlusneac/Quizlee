@@ -20,8 +20,6 @@ class DogsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell(dogReuseIdentifier)
-        print(allDogBreeds)
-        
         tableView.separatorColor = .clear
         tableView.separatorInset = UIEdgeInsets(top: 39, left: 120, bottom: 39, right: 0)
         tableView.rowHeight = 72

@@ -46,8 +46,6 @@ struct DogRepository {
             for dogBreed in allDogBreedsDict {
                 allDogBreedsArray.append(DogBreed(dogBreed: dogBreed.key, dogSubbreeds: dogBreed.value))
             }
-            print(allDogBreedsArray)
-            
         }
         return allDogBreedsArray
     }
