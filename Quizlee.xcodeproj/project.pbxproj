@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3163982230153F9009C9897 /* BreedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3163981230153F9009C9897 /* BreedButton.swift */; };
+		A3190E4322FC5F7200540652 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3190E4222FC5F7200540652 /* DogTableViewCell.xib */; };
+		A34DDBA622FDBBF10089E247 /* DogProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */; };
+		A397700C22F41FDF00A0D13B /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397700B22F41FDF00A0D13B /* Statement.swift */; };
+		A397700E22F421D900A0D13B /* StatementPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397700D22F421D900A0D13B /* StatementPool.swift */; };
+		A397701122F4352000A0D13B /* StatementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701022F4352000A0D13B /* StatementButton.swift */; };
+		A397701422F461E600A0D13B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701322F461E500A0D13B /* InitialViewController.swift */; };
+		A397701622F4692800A0D13B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701522F4692800A0D13B /* ResultsViewController.swift */; };
+		A397701922F46CCC00A0D13B /* QuizCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701822F46CCC00A0D13B /* QuizCoordinator.swift */; };
+		A3ED129022FAF7E600896304 /* DogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED128F22FAF7E600896304 /* DogsTableViewController.swift */; };
+		A3ED129222FAF9A600896304 /* alldogsresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A3ED129122FAF9A600896304 /* alldogsresponse.json */; };
+		A3ED129622FAFBCA00896304 /* DogBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED129522FAFBCA00896304 /* DogBreeds.swift */; };
+		A3ED129922FAFC9900896304 /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED129722FAFC9900896304 /* DogTableViewCell.swift */; };
+		A3ED129C22FAFFF800896304 /* DogBreedsPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED129B22FAFFF800896304 /* DogBreedsPool.swift */; };
 		F61DD28922F3649100B31D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DD28822F3649100B31D4A /* AppDelegate.swift */; };
-		F61DD28B22F3649100B31D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DD28A22F3649100B31D4A /* ViewController.swift */; };
+		F61DD28B22F3649100B31D4A /* StatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DD28A22F3649100B31D4A /* StatementViewController.swift */; };
 		F61DD28E22F3649100B31D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61DD28C22F3649100B31D4A /* Main.storyboard */; };
 		F61DD29022F3649600B31D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61DD28F22F3649600B31D4A /* Assets.xcassets */; };
 		F61DD29322F3649600B31D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61DD29122F3649600B31D4A /* LaunchScreen.storyboard */; };
+		F61DD29C22F3651800B31D4A /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DD29B22F3651800B31D4A /* DogRepository.swift */; };
+		F61DD2A022F3660D00B31D4A /* dog_statements.json in Resources */ = {isa = PBXBuildFile; fileRef = F61DD29F22F3660D00B31D4A /* dog_statements.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3163981230153F9009C9897 /* BreedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedButton.swift; sourceTree = "<group>"; };
+		A3190E4222FC5F7200540652 /* DogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
+		A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewController.swift; sourceTree = "<group>"; };
+		A397700B22F41FDF00A0D13B /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		A397700D22F421D900A0D13B /* StatementPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementPool.swift; sourceTree = "<group>"; };
+		A397701022F4352000A0D13B /* StatementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementButton.swift; sourceTree = "<group>"; };
+		A397701322F461E500A0D13B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A397701522F4692800A0D13B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		A397701822F46CCC00A0D13B /* QuizCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCoordinator.swift; sourceTree = "<group>"; };
+		A3ED128F22FAF7E600896304 /* DogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTableViewController.swift; sourceTree = "<group>"; };
+		A3ED129122FAF9A600896304 /* alldogsresponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = alldogsresponse.json; path = ../../TableView/alldogsresponse.json; sourceTree = "<group>"; };
+		A3ED129522FAFBCA00896304 /* DogBreeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreeds.swift; sourceTree = "<group>"; };
+		A3ED129722FAFC9900896304 /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		A3ED129B22FAFFF800896304 /* DogBreedsPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsPool.swift; sourceTree = "<group>"; };
 		F61DD28522F3649100B31D4A /* Quizlee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizlee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61DD28822F3649100B31D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F61DD28A22F3649100B31D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F61DD28A22F3649100B31D4A /* StatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewController.swift; sourceTree = "<group>"; };
 		F61DD28D22F3649100B31D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F61DD28F22F3649600B31D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F61DD29222F3649600B31D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F61DD29422F3649700B31D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61DD29B22F3651800B31D4A /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
+		F61DD29F22F3660D00B31D4A /* dog_statements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_statements.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +67,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A397700822F41DB900A0D13B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A397700B22F41FDF00A0D13B /* Statement.swift */,
+				A397700D22F421D900A0D13B /* StatementPool.swift */,
+				A3ED128F22FAF7E600896304 /* DogsTableViewController.swift */,
+				A3ED129522FAFBCA00896304 /* DogBreeds.swift */,
+				A3ED129B22FAFFF800896304 /* DogBreedsPool.swift */,
+				A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */,
+				A3163981230153F9009C9897 /* BreedButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A397700F22F434F800A0D13B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A397701022F4352000A0D13B /* StatementButton.swift */,
+				A3ED129722FAFC9900896304 /* DogTableViewCell.swift */,
+				A3190E4222FC5F7200540652 /* DogTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A397701222F43A5E00A0D13B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F61DD28A22F3649100B31D4A /* StatementViewController.swift */,
+				A397701322F461E500A0D13B /* InitialViewController.swift */,
+				A397701522F4692800A0D13B /* ResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A397701722F46BCB00A0D13B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A397701822F46CCC00A0D13B /* QuizCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		F61DD27C22F3649100B31D4A = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +128,28 @@
 		F61DD28722F3649100B31D4A /* Quizlee */ = {
 			isa = PBXGroup;
 			children = (
+				A397701722F46BCB00A0D13B /* Coordinator */,
+				A397701222F43A5E00A0D13B /* Controller */,
+				A397700F22F434F800A0D13B /* View */,
+				A397700822F41DB900A0D13B /* Model */,
+				F61DD29A22F364BE00B31D4A /* DogRepository */,
 				F61DD28822F3649100B31D4A /* AppDelegate.swift */,
-				F61DD28A22F3649100B31D4A /* ViewController.swift */,
 				F61DD28C22F3649100B31D4A /* Main.storyboard */,
 				F61DD28F22F3649600B31D4A /* Assets.xcassets */,
 				F61DD29122F3649600B31D4A /* LaunchScreen.storyboard */,
 				F61DD29422F3649700B31D4A /* Info.plist */,
+				F61DD29F22F3660D00B31D4A /* dog_statements.json */,
+				A3ED129122FAF9A600896304 /* alldogsresponse.json */,
 			);
 			path = Quizlee;
+			sourceTree = "<group>";
+		};
+		F61DD29A22F364BE00B31D4A /* DogRepository */ = {
+			isa = PBXGroup;
+			children = (
+				F61DD29B22F3651800B31D4A /* DogRepository.swift */,
+			);
+			path = DogRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3190E4322FC5F7200540652 /* DogTableViewCell.xib in Resources */,
+				F61DD2A022F3660D00B31D4A /* dog_statements.json in Resources */,
 				F61DD29322F3649600B31D4A /* LaunchScreen.storyboard in Resources */,
 				F61DD29022F3649600B31D4A /* Assets.xcassets in Resources */,
 				F61DD28E22F3649100B31D4A /* Main.storyboard in Resources */,
+				A3ED129222FAF9A600896304 /* alldogsresponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +226,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F61DD28B22F3649100B31D4A /* ViewController.swift in Sources */,
+				A3163982230153F9009C9897 /* BreedButton.swift in Sources */,
+				A3ED129C22FAFFF800896304 /* DogBreedsPool.swift in Sources */,
+				F61DD28B22F3649100B31D4A /* StatementViewController.swift in Sources */,
+				A397701422F461E600A0D13B /* InitialViewController.swift in Sources */,
+				A3ED129922FAFC9900896304 /* DogTableViewCell.swift in Sources */,
+				A3ED129622FAFBCA00896304 /* DogBreeds.swift in Sources */,
+				A397700E22F421D900A0D13B /* StatementPool.swift in Sources */,
+				F61DD29C22F3651800B31D4A /* DogRepository.swift in Sources */,
 				F61DD28922F3649100B31D4A /* AppDelegate.swift in Sources */,
+				A397700C22F41FDF00A0D13B /* Statement.swift in Sources */,
+				A3ED129022FAF7E600896304 /* DogsTableViewController.swift in Sources */,
+				A397701122F4352000A0D13B /* StatementButton.swift in Sources */,
+				A34DDBA622FDBBF10089E247 /* DogProfileViewController.swift in Sources */,
+				A397701922F46CCC00A0D13B /* QuizCoordinator.swift in Sources */,
+				A397701622F4692800A0D13B /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

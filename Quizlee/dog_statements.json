@@ -1,0 +1,104 @@
+{
+   "statements":[
+      {
+         "statement":"Grapes are poisonous to dogs.",
+         "isTrue":false
+      },
+      {
+         "statement":"Dogs are completely color blind.",
+         "isTrue":true
+      },
+      {
+         "statement":"There are 7 dog breed groups.",
+         "isTrue":true
+      },
+      {
+         "statement":"Huskies are from New Zealand.",
+         "isTrue":false
+      },
+      {
+         "statement":"The Great Dane is the largest dog in the world.",
+         "isTrue":true
+      },
+      {
+         "statement":"A dog's nose is as unique as a human's fingerprints.",
+         "isTrue":true
+      },
+      {
+         "statement":"Queen Elizabeth's favorite dog breed is the Labrador.",
+         "isTrue":false
+      },
+      {
+         "statement":"There are 3,000 dogs in the world.",
+         "isTrue":false
+      },
+      {
+         "statement":"Adult dogs have 42 teeth.",
+         "isTrue":true
+      },
+      {
+         "statement":"Dalmatians have spots inside their mouths.",
+         "isTrue":true
+      },
+      {
+         "statement":"Female dogs definitely have better personalities if they are allowed to have a litter before being spayed.",
+         "isTrue":false
+      },
+      {
+         "statement":"A pet store, selling dogs for profit, isn't the best place to buy a puppy.",
+         "isTrue":true
+      },
+      {
+         "statement":"The jaws of pit bulls are anatomically different from those of other dogs so that they can lock shut when they fight.",
+         "isTrue":false
+      },
+      {
+         "statement":"Purebred dogs are *always* less healthy than mutts.",
+         "isTrue":false
+      },
+      {
+         "statement":"The Chinese Crested and other hairless dogs have higher body temperatures than dogs with hair.",
+         "isTrue":false
+      },
+      {
+         "statement":"The poodle originated in France.",
+         "isTrue":false
+      },
+      {
+         "statement":"The dog was the first domesticated animal.",
+         "isTrue":true
+      },
+      {
+         "statement":"Mixed-breed dogs do not get hip dysplasia.",
+         "isTrue":false
+      },
+      {
+         "statement":"Some drug-detecting dogs are trained by addicting them to the drug that they are supposed to find.",
+         "isTrue":false
+      },
+      {
+         "statement":"If your dog makes a mess on the carpet, you should rub his nose in it to teach him not to go in the house.",
+         "isTrue":false
+      },
+      {
+         "statement":"Only male dogs raise a leg to urinate.",
+         "isTrue":false
+      },
+      {
+         "statement":"Puppies should not be taken from their mother until they are *at least* seven weeks old.",
+         "isTrue":true
+      },
+      {
+         "statement":"Dogs who are just household pets don't need obedience training.",
+         "isTrue":false
+      },
+      {
+         "statement":"The best way to get your dog trained is to have someone else do it.",
+         "isTrue":false
+      },
+      {
+         "statement":"In laboratory tests, dogs really are 'smarter' than cats.",
+         "isTrue":true
+      }
+   ]
+}
