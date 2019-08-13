@@ -17,7 +17,6 @@ class DogProfileViewController: UIViewController {
     @IBOutlet weak var dogView: UIView!
     @IBOutlet weak var dogImage: UIImageView!
     
-    @IBOutlet var labelsCollection: [UILabel]!
     @IBOutlet var buttonsCollection: [UIButton]!
     
     var breedPicker = UIPickerView()
@@ -28,6 +27,8 @@ class DogProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureAppearance()
         
         if userPickedOption == false {
             initialBreedDisplayed = breedButton.titleLabel!.text!
@@ -42,19 +43,7 @@ class DogProfileViewController: UIViewController {
         
         breedButton.layer.cornerRadius = 15
         dogView.layer.cornerRadius = 22
-//        dogImage.layer.cornerRadius = 30
         
-//        for label in labelsCollection {
-//            label.layer.cornerRadius = 16
-//        }
-//
-//        for button in buttonsCollection {
-//            button.layer.cornerRadius = 16
-//        }
-        
-        for dogBreed in allDogBreedsDict {
-                dogBreeds.append(dogBreed.key.capitalized)
-            }
         
         breedTextField.tintColor = .clear
         
@@ -68,6 +57,22 @@ class DogProfileViewController: UIViewController {
                                                selector: #selector(keyboardWillHide(notification:)),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
+    }
+    
+    func configureAppearance() {
+        
+        dogImage.layer.cornerRadius = 30
+        dogImage.layer.masksToBounds = true
+//        dogImage.clipsToBounds = true
+        
+        
+        for button in buttonsCollection {
+            button.layer.cornerRadius = 16
+        }
+        
+        for dogBreed in allDogBreedsDict {
+            dogBreeds.append(dogBreed.key.capitalized)
+        }
     }
     
     @objc func keyboardWillShow(notification:NSNotification) {

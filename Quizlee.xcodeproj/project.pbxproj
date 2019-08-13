@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3152DF22302BB7C0004BD58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3152DF12302BB7C0004BD58 /* ViewController.swift */; };
+		A3152DF52302BBC30004BD58 /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3152DF32302BBC30004BD58 /* DogCollectionViewCell.swift */; };
 		A3163982230153F9009C9897 /* BreedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3163981230153F9009C9897 /* BreedButton.swift */; };
 		A3190E4322FC5F7200540652 /* DogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3190E4222FC5F7200540652 /* DogTableViewCell.xib */; };
 		A34DDBA622FDBBF10089E247 /* DogProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */; };
@@ -16,6 +18,12 @@
 		A397701422F461E600A0D13B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701322F461E500A0D13B /* InitialViewController.swift */; };
 		A397701622F4692800A0D13B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701522F4692800A0D13B /* ResultsViewController.swift */; };
 		A397701922F46CCC00A0D13B /* QuizCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397701822F46CCC00A0D13B /* QuizCoordinator.swift */; };
+		A39C7E3C2302BEB100691D86 /* DogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39C7E3B2302BEB100691D86 /* DogCollectionViewCell.xib */; };
+		A39C7E3E2302BF4700691D86 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C7E3D2302BF4700691D86 /* Dog.swift */; };
+		A39C7E402302BF7400691D86 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C7E3F2302BF7400691D86 /* PinterestLayout.swift */; };
+		A39C7E422302C50200691D86 /* Dogs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39C7E412302C50200691D86 /* Dogs.xcassets */; };
+		A39C7E4B2302E1F400691D86 /* Dogs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39C7E4A2302E1F400691D86 /* Dogs.plist */; };
+		A39C7E4D2302E20200691D86 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39C7E4C2302E20200691D86 /* Info.plist */; };
 		A3ED129022FAF7E600896304 /* DogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED128F22FAF7E600896304 /* DogsTableViewController.swift */; };
 		A3ED129222FAF9A600896304 /* alldogsresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A3ED129122FAF9A600896304 /* alldogsresponse.json */; };
 		A3ED129622FAFBCA00896304 /* DogBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED129522FAFBCA00896304 /* DogBreeds.swift */; };
@@ -31,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3152DF12302BB7C0004BD58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3152DF32302BBC30004BD58 /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3163981230153F9009C9897 /* BreedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedButton.swift; sourceTree = "<group>"; };
 		A3190E4222FC5F7200540652 /* DogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogTableViewCell.xib; sourceTree = "<group>"; };
 		A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +50,12 @@
 		A397701322F461E500A0D13B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		A397701522F4692800A0D13B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		A397701822F46CCC00A0D13B /* QuizCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCoordinator.swift; sourceTree = "<group>"; };
+		A39C7E3B2302BEB100691D86 /* DogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogCollectionViewCell.xib; sourceTree = "<group>"; };
+		A39C7E3D2302BF4700691D86 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		A39C7E3F2302BF7400691D86 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		A39C7E412302C50200691D86 /* Dogs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Dogs.xcassets; sourceTree = "<group>"; };
+		A39C7E4A2302E1F400691D86 /* Dogs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dogs.plist; sourceTree = "<group>"; };
+		A39C7E4C2302E20200691D86 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../CollectionViewExample/CollectionViewExample/Info.plist; sourceTree = "<group>"; };
 		A3ED128F22FAF7E600896304 /* DogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTableViewController.swift; sourceTree = "<group>"; };
 		A3ED129122FAF9A600896304 /* alldogsresponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = alldogsresponse.json; path = ../../TableView/alldogsresponse.json; sourceTree = "<group>"; };
 		A3ED129522FAFBCA00896304 /* DogBreeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreeds.swift; sourceTree = "<group>"; };
@@ -51,7 +67,6 @@
 		F61DD28D22F3649100B31D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F61DD28F22F3649600B31D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F61DD29222F3649600B31D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F61DD29422F3649700B31D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61DD29B22F3651800B31D4A /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
 		F61DD29F22F3660D00B31D4A /* dog_statements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_statements.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +92,11 @@
 				A3ED129B22FAFFF800896304 /* DogBreedsPool.swift */,
 				A34DDBA522FDBBF10089E247 /* DogProfileViewController.swift */,
 				A3163981230153F9009C9897 /* BreedButton.swift */,
+				A3152DF12302BB7C0004BD58 /* ViewController.swift */,
+				A3152DF32302BBC30004BD58 /* DogCollectionViewCell.swift */,
+				A39C7E3B2302BEB100691D86 /* DogCollectionViewCell.xib */,
+				A39C7E3D2302BF4700691D86 /* Dog.swift */,
+				A39C7E3F2302BF7400691D86 /* PinterestLayout.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,9 +157,11 @@
 				F61DD28C22F3649100B31D4A /* Main.storyboard */,
 				F61DD28F22F3649600B31D4A /* Assets.xcassets */,
 				F61DD29122F3649600B31D4A /* LaunchScreen.storyboard */,
-				F61DD29422F3649700B31D4A /* Info.plist */,
+				A39C7E4A2302E1F400691D86 /* Dogs.plist */,
+				A39C7E4C2302E20200691D86 /* Info.plist */,
 				F61DD29F22F3660D00B31D4A /* dog_statements.json */,
 				A3ED129122FAF9A600896304 /* alldogsresponse.json */,
+				A39C7E412302C50200691D86 /* Dogs.xcassets */,
 			);
 			path = Quizlee;
 			sourceTree = "<group>";
@@ -212,9 +234,13 @@
 			files = (
 				A3190E4322FC5F7200540652 /* DogTableViewCell.xib in Resources */,
 				F61DD2A022F3660D00B31D4A /* dog_statements.json in Resources */,
+				A39C7E4B2302E1F400691D86 /* Dogs.plist in Resources */,
+				A39C7E3C2302BEB100691D86 /* DogCollectionViewCell.xib in Resources */,
 				F61DD29322F3649600B31D4A /* LaunchScreen.storyboard in Resources */,
 				F61DD29022F3649600B31D4A /* Assets.xcassets in Resources */,
 				F61DD28E22F3649100B31D4A /* Main.storyboard in Resources */,
+				A39C7E4D2302E20200691D86 /* Info.plist in Resources */,
+				A39C7E422302C50200691D86 /* Dogs.xcassets in Resources */,
 				A3ED129222FAF9A600896304 /* alldogsresponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,13 +259,17 @@
 				A3ED129922FAFC9900896304 /* DogTableViewCell.swift in Sources */,
 				A3ED129622FAFBCA00896304 /* DogBreeds.swift in Sources */,
 				A397700E22F421D900A0D13B /* StatementPool.swift in Sources */,
+				A3152DF52302BBC30004BD58 /* DogCollectionViewCell.swift in Sources */,
 				F61DD29C22F3651800B31D4A /* DogRepository.swift in Sources */,
 				F61DD28922F3649100B31D4A /* AppDelegate.swift in Sources */,
 				A397700C22F41FDF00A0D13B /* Statement.swift in Sources */,
 				A3ED129022FAF7E600896304 /* DogsTableViewController.swift in Sources */,
 				A397701122F4352000A0D13B /* StatementButton.swift in Sources */,
 				A34DDBA622FDBBF10089E247 /* DogProfileViewController.swift in Sources */,
+				A39C7E3E2302BF4700691D86 /* Dog.swift in Sources */,
 				A397701922F46CCC00A0D13B /* QuizCoordinator.swift in Sources */,
+				A3152DF22302BB7C0004BD58 /* ViewController.swift in Sources */,
+				A39C7E402302BF7400691D86 /* PinterestLayout.swift in Sources */,
 				A397701622F4692800A0D13B /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Quizlee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Quizlee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
