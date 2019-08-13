@@ -16,6 +16,7 @@ class DogProfileViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var dogView: UIView!
     @IBOutlet weak var dogImage: UIImageView!
+    @IBOutlet weak var characCollectionView: UICollectionView!
     
     @IBOutlet var buttonsCollection: [UIButton]!
     
@@ -24,6 +25,9 @@ class DogProfileViewController: UIViewController {
     var initialBreedDisplayed = ""
     var allDogBreedsDict = DogRepository.getAllDogsDict()
     var dogBreeds = [String]()
+    
+    let defaultSpace: CGFloat = 8
+    let numberOfColumns: CGFloat = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +61,34 @@ class DogProfileViewController: UIViewController {
                                                selector: #selector(keyboardWillHide(notification:)),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
+        
+        characCollectionView.delegate = self
+        characCollectionView.dataSource = self
+        characCollectionView.register(UINib(nibName: "ButtonCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "ButtonCollectionViewCell")
+        
+        characCollectionView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture(gesture:))))
+        
+        characCollectionView.allowsMultipleSelection = true
+        
+        
     }
+    
+    @objc func handleLongGesture(gesture:UILongPressGestureRecognizer) {
+        
+        switch gesture.state {
+        case .began:
+            guard let selectedIndexPath = characCollectionView.indexPathForItem(at: gesture.location(in: characCollectionView))
+                else { break }
+            characCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+        case .changed:
+            characCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view))
+        case .ended:
+            characCollectionView.endInteractiveMovement()
+        default:
+            characCollectionView.cancelInteractiveMovement()
+        }
+    }
+    
     
     func configureAppearance() {
         
@@ -119,6 +150,103 @@ class DogProfileViewController: UIViewController {
         breedButton.setTitle(initialBreedDisplayed, for: .normal)
         breedButton.titleLabel?.alpha = 1
     }
+    
+    
+    ///////////////////////  Character Collection View  ///////////////////////
+    
+    
+    
+    
+    var characterTraits = ["PLAYFUL", "CHEERFUL", "ACTIVE", "FRIENDLY", "CURIOUS", "QUIET", "PEACEFUL", "LOUD", "SILLY", "LAZY", "CHILLY", "CLUMSY", "FUNNY"]
+    
+    var selectedItems = [String]()
+    
+    
+    
+    
+    
+    
+    
+    
+    ///////////////////////  Character Collection View  ///////////////////////
+    
+    
+    
+}
+
+extension DogProfileViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let width = (collectionView.frame.size.width - defaultSpace - collectionView.contentInset.left - collectionView.contentInset.right) / numberOfColumns
+            let height: CGFloat = 50
+    
+            return CGSize(width: width, height: height)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return defaultSpace
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return defaultSpace
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let aux = characterTraits.remove(at: sourceIndexPath.item)
+        characterTraits.insert(aux, at: destinationIndexPath.item)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let characTrait = characterTraits[indexPath.row]
+        selectedItems.append(characTrait)
+        print(selectedItems)
+
+        print(indexPath.row)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        if selectedItems.count < 3 {
+            return true
+        }
+        return false
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let characTrait = characterTraits[indexPath.row]
+        guard let index = selectedItems.firstIndex(of: characTrait) else {
+            return
+        }
+        selectedItems.remove(at: index)
+        print(indexPath.row)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        characCollectionView.reloadData()
+    }
+}
+
+
+
+extension DogProfileViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return characterTraits.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+        
+        let characterTrait = characterTraits[indexPath.row]
+        cell.characTraitButton.setTitle(characterTrait, for: .normal)
+        
+        if selectedItems.contains(characterTrait) {
+            cell.isSelected = true
+        }
+        
+        return cell
+    }
+    
+    
 }
 
 extension DogProfileViewController: UIPickerViewDelegate {
