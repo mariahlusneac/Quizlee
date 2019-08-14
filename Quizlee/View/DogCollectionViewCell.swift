@@ -35,4 +35,6 @@ class DogCollectionViewCell: UICollectionViewCell {
         
     }
     
+    
+    
 }

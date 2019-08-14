@@ -91,7 +91,6 @@
 				A3ED129B22FAFFF800896304 /* DogBreedsPool.swift */,
 				A3163981230153F9009C9897 /* BreedButton.swift */,
 				A39C7E3D2302BF4700691D86 /* Dog.swift */,
-				A39C7E3F2302BF7400691D86 /* PinterestLayout.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +105,7 @@
 				A39C7E3B2302BEB100691D86 /* DogCollectionViewCell.xib */,
 				A39C7E502302EE2F00691D86 /* ButtonCollectionViewCell.swift */,
 				A39C7E512302EE2F00691D86 /* ButtonCollectionViewCell.xib */,
+				A39C7E3F2302BF7400691D86 /* PinterestLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

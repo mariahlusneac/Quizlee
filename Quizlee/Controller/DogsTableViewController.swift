@@ -29,7 +29,7 @@ class DogsTableViewController: UITableViewController {
                 dogBreedsWithoutSubbreeds.append(dogBreed.dogBreed)
             }
         }
-        
+
         for i in 0..<allDogBreeds.count {
             sectionTitles.append(allDogBreeds[i].dogBreed)
         }
@@ -112,6 +112,16 @@ class DogsTableViewController: UITableViewController {
         sectionFooterView.backgroundColor = UIColor(red: 240.0 / 255.0, green: 244.0 / 255.0, blue: 248.0 / 255.0, alpha: 1.0)
         sectionFooter.addSubview(sectionFooterView)
         return sectionFooter
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: dogReuseIdentifier, for: indexPath) as! DogTableViewCell
+        cell.backgroundColor = .white
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: dogReuseIdentifier, for: indexPath) as! DogTableViewCell
+        cell.backgroundColor = .blue
     }
     
     

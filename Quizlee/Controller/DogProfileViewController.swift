@@ -20,6 +20,23 @@ class DogProfileViewController: UIViewController {
     
     @IBOutlet var buttonsCollection: [UIButton]!
     
+    var numberOfClicks = 0
+    
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        numberOfClicks += 1
+        if numberOfClicks % 2 == 1 {
+            sender.backgroundColor = UIColor(displayP3Red: 0.96, green: 0.439, blue: 0.243, alpha: 1)
+            sender.setTitleColor(.white, for: .normal)
+        }
+        else {
+            sender.backgroundColor = UIColor(displayP3Red: 0.898, green: 0.9, blue: 0.92, alpha: 1)
+            sender.titleLabel?.textColor = UIColor(displayP3Red: 0.709, green: 0.721, blue: 0.78, alpha: 1)
+        }
+    }
+    
+    
+    
+    
     var breedPicker = UIPickerView()
     var userPickedOption = false
     var initialBreedDisplayed = ""
@@ -71,6 +88,21 @@ class DogProfileViewController: UIViewController {
         characCollectionView.allowsMultipleSelection = true
         
         
+        let layout: UICollectionViewFlowLayout = characCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        
+//        characCollectionView.collectionViewLayout.invalidateLayout()
+ 
+        
+    }
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        characCollectionView.collectionViewLayout.invalidateLayout()
+        for button in buttonsCollection {
+            button.backgroundColor = UIColor(displayP3Red: 0.898, green: 0.9, blue: 0.92, alpha: 1)
+            button.titleLabel?.textColor = UIColor(displayP3Red: 0.709, green: 0.721, blue: 0.78, alpha: 1)
+        }
     }
     
     @objc func handleLongGesture(gesture:UILongPressGestureRecognizer) {
@@ -161,27 +193,28 @@ class DogProfileViewController: UIViewController {
     
     var selectedItems = [String]()
     
-    
-    
-    
-    
-    
-    
+//    override func viewWillLayoutSubviews() {
+//
+//        super.viewWillLayoutSubviews()
+//
+//        characCollectionView.collectionViewLayout.invalidateLayout()
+//
+//    }
+
     
     ///////////////////////  Character Collection View  ///////////////////////
-    
-    
-    
 }
+
 
 extension DogProfileViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let width = (collectionView.frame.size.width - defaultSpace - collectionView.contentInset.left - collectionView.contentInset.right) / numberOfColumns
-            let height: CGFloat = 50
-    
+            let height: CGFloat = 30
+
             return CGSize(width: width, height: height)
     }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -203,6 +236,11 @@ extension DogProfileViewController: UICollectionViewDelegateFlowLayout {
         print(selectedItems)
 
         print(indexPath.row)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+//        cell.characTraitButton.backgroundColor = .orange
+//        cell.characTraitButton.titleLabel?.textColor = .white
+        cell.isSelected = true
     }
     
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
@@ -218,12 +256,21 @@ extension DogProfileViewController: UICollectionViewDelegateFlowLayout {
             return
         }
         selectedItems.remove(at: index)
+        
         print(indexPath.row)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+//        cell.characTraitButton.backgroundColor = .lightGray
+//        cell.characTraitButton.titleLabel?.textColor = .gray
+        
+        cell.isSelected = false
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        characCollectionView.reloadData()
-    }
+    
+    
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        characCollectionView.reloadData()
+//    }
 }
 
 

@@ -325,6 +325,9 @@
                                                                 <state key="normal" title="1-2">
                                                                     <color key="titleColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="gvb-jJ-q0u" eventType="touchUpInside" id="HQH-mG-6Oh"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOj-XC-c6q">
                                                                 <rect key="frame" x="288" y="0.0" width="50" height="32"/>
@@ -338,19 +341,24 @@
                                                                 <state key="normal" title="2+">
                                                                     <color key="titleColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="gvb-jJ-q0u" eventType="touchUpInside" id="7t7-pA-ATU"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-Vc-JNE">
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-Vc-JNE">
                                                                 <rect key="frame" x="156" y="0.0" width="45" height="32"/>
-                                                                <color key="backgroundColor" red="0.95686274510000002" green="0.43921568630000002" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" red="0.8980392157" green="0.90196078430000004" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="32" id="JJq-E4-xQ0"/>
                                                                     <constraint firstAttribute="width" constant="45" id="NDs-f2-RHt"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <inset key="titleEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                                                 <state key="normal" title="-1">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="gvb-jJ-q0u" eventType="touchUpInside" id="0V1-Y5-iOV"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -387,6 +395,9 @@
                                                                 <state key="normal" title="FEMALE">
                                                                     <color key="titleColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="gvb-jJ-q0u" eventType="touchUpInside" id="wlh-aV-O02"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-GF-UEf">
                                                                 <rect key="frame" x="0.0" y="7.5" width="59" height="17"/>
@@ -396,15 +407,18 @@
                                                             </label>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTZ-Sv-KDn">
                                                                 <rect key="frame" x="158" y="0.0" width="70" height="32"/>
-                                                                <color key="backgroundColor" red="0.95686274510000002" green="0.43921568630000002" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" red="0.8980392157" green="0.90196078430000004" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="70" id="y34-US-9Ko"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <inset key="titleEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                                                 <state key="normal" title="MALE">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" red="0.70980392160000005" green="0.72156862749999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="gvb-jJ-q0u" eventType="touchUpInside" id="Ljw-95-gtO"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -459,7 +473,7 @@
                                                         <rect key="frame" x="0.0" y="36" width="338" height="119"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9RZ-Nf-kja">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rON-M9-xjq">
                                                             <size key="itemSize" width="50" height="50"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -523,14 +537,6 @@
                         <outletCollection property="buttonsCollection" destination="AOj-XC-c6q" collectionClass="NSMutableArray" id="cuP-xS-f0L"/>
                         <outletCollection property="buttonsCollection" destination="tTZ-Sv-KDn" collectionClass="NSMutableArray" id="EXd-tH-rye"/>
                         <outletCollection property="buttonsCollection" destination="kcr-8h-ing" collectionClass="NSMutableArray" id="udL-DO-scJ"/>
-                        <outletCollection property="buttonsCollection" destination="vHV-lg-UMP" collectionClass="NSMutableArray" id="4Dw-ql-bGa"/>
-                        <outletCollection property="buttonsCollection" destination="Dze-Sp-fUM" collectionClass="NSMutableArray" id="Ucs-BI-RjJ"/>
-                        <outletCollection property="buttonsCollection" destination="AGr-Os-SeG" collectionClass="NSMutableArray" id="J0B-uA-fdW"/>
-                        <outletCollection property="buttonsCollection" destination="Oog-tL-3tk" collectionClass="NSMutableArray" id="4Xm-li-esr"/>
-                        <outletCollection property="buttonsCollection" destination="hku-GC-woN" collectionClass="NSMutableArray" id="4AQ-aV-6Dj"/>
-                        <outletCollection property="buttonsCollection" destination="oL9-LI-287" collectionClass="NSMutableArray" id="xGr-1D-7Gp"/>
-                        <outletCollection property="buttonsCollection" destination="CEj-vA-TUL" collectionClass="NSMutableArray" id="pxU-cX-fdR"/>
-                        <outletCollection property="buttonsCollection" destination="WVV-hB-2vl" collectionClass="NSMutableArray" id="mWv-NS-uVT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khG-Xb-VHi" userLabel="First Responder" sceneMemberID="firstResponder"/>

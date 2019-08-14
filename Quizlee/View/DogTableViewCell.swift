@@ -23,4 +23,15 @@ class DogTableViewCell: UITableViewCell {
         breedLabel.text = breed.dogBreed
     }
     
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                self.backgroundColor = .lightGray
+            }
+            else {
+                // FIXME:
+                self.backgroundColor = .white
+            }
+        }
+    }
 }

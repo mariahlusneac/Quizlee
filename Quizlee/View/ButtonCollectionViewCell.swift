@@ -15,13 +15,19 @@ class ButtonCollectionViewCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            characTraitButton.backgroundColor = isSelected ? .orange : .lightGray
+            characTraitButton.backgroundColor = isSelected ? UIColor(displayP3Red: 0.956, green: 0.439, blue: 0.243, alpha: 1) : UIColor(displayP3Red: 0.898, green: 0.9, blue: 0.925, alpha: 1)
+            characTraitButton.titleLabel?.textColor = isSelected ? .white : UIColor(displayP3Red: 0.709, green: 0.721, blue: 0.78, alpha: 1)
+            
+//            characTraitButton.backgroundColor = isSelected ? .orange : .lightGray
+//            characTraitButton.titleLabel?.textColor = isSelected ? .white : .gray
+            
         }
     }
     
     var buttonText: String! {
         didSet {
             characTraitButton.titleLabel?.text = buttonText
+//            characTraitButton.isHidden = true
         }
     }
     
