@@ -10,5 +10,6 @@ import Foundation
 
 struct Statement {
     let statementText: String
-    let isTrue: Bool
+    let answer: String
+    let options: [String]
 }

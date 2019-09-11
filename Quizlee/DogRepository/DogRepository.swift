@@ -12,9 +12,9 @@ struct DogRepository {
 
     static let statementsFilename = "dog_statements"
     static let dogBreedsFilename = "alldogsresponse"
+    static let statements2Filename = "dog_questions_multiple"
 
     static func dataFromJSON(withName name: String) -> Dictionary<String, AnyObject>? {
-
         guard let path = Bundle.main.path(forResource: name, ofType: "json") else {
             print("error finding json file at path: \(name).json")
             return nil

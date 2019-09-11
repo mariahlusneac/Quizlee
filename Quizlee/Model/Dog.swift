@@ -22,7 +22,6 @@ struct Dog {
             let image = UIImage(named: photo) else {
                 return nil
         }
-        
         self.init(image: image, name: name)
     }
     
@@ -33,6 +32,7 @@ struct Dog {
                 return dogs
         }
         for dictionary in photosFromPlist {
+            
             if let dog = Dog(dictionary: dictionary) {
                 dogs.append(dog)
             }

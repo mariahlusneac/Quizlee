@@ -14,11 +14,11 @@ struct StatementPool {
     
     init(data: Dictionary<String, AnyObject>) {
         pool = [Statement]()
-        if let statementsCollection = data["statements"] as? [[String: AnyObject]] {
+        if let statementsCollection = data["questions"] as? [[String: AnyObject]] {
             statementsCollection.forEach( {
 //                print("statement: \($0)")
-                if let statementText = $0["statement"] as? String, let truth = $0["isTrue"] as? Bool {
-                    let statement = Statement(statementText: statementText, isTrue: truth)
+                if let statementText = $0["question"] as? String, let options = $0["options"] as? [String], let answer = $0["answer"] as? String {
+                    let statement = Statement(statementText: statementText, answer: answer, options: options)
                     pool.append(statement)
                 }
             } )

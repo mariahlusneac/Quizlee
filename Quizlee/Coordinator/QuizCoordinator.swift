@@ -6,7 +6,9 @@
 //  Copyright © 2019 Endava Internship 2019. All rights reserved.
 //
 
-import Foundation
+
+
+
 import UIKit
 
 protocol QuizFlowDelegate: class {
@@ -15,13 +17,13 @@ protocol QuizFlowDelegate: class {
 }
 
 class QuizCoordinator {
-   
+    
     private var statements: [Statement]
     private var currentStatementIndex: Int = 0
     private var score: Int = 0
-    private var navigationController: UINavigationController? = nil
- 
-    weak var flowDelegate: QuizFlowDelegate? = nil
+    internal var navigationController: UINavigationController? = nil
+    
+    weak var flowDelegate: QuizFlowDelegate?
     
     init(statements: [Statement]) {
         self.statements = statements
@@ -47,33 +49,34 @@ class QuizCoordinator {
         return newViewController
     }
     
-    func getResultsViewController(withScore totalScore: Int) -> ResultsViewController? {
+    func getResultViewController(withScore score: Int) -> ResultsViewController? {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let newViewController = storyboard.instantiateViewController(withIdentifier: "ResultsVC") as? ResultsViewController
         newViewController?.score = score
         newViewController?.maxScore = statements.count
-        newViewController?.delegate = self
+        newViewController?.delegate = self as ResultsDelegate
         return newViewController
     }
 }
 
 extension QuizCoordinator: QuizDelegate {
-    func userDidAnswerQuestions(atIndex: Int, withCorrectAnswer answer: Bool) {
-        score += answer ? 1 : 0
-        if currentStatementIndex < statements.count - 1 {
-            currentStatementIndex += 1
-            if let newQuizVC = getQuizViewController(forStatement: statements[currentStatementIndex], withIndex: currentStatementIndex, inTotal: statements.count) {
-                navigationController?.pushViewController(newQuizVC, animated: true)
+        func userDidAnswerQuestions(atIndex: Int, withCorrectAnswer answer: Bool) {
+            score += answer ? 1 : 0
+            if currentStatementIndex < statements.count - 1 {
+                currentStatementIndex += 1
+                if let newQuizVC = getQuizViewController(forStatement: statements[currentStatementIndex], withIndex: currentStatementIndex, inTotal: statements.count) {
+                    navigationController?.pushViewController(newQuizVC, animated: true)
+                }
+            }
+            else if let scoreVC = getResultViewController(withScore: score) {
+                navigationController?.pushViewController(scoreVC, animated: true)
             }
         }
-        else if let scoreVC = getResultsViewController(withScore: score) {
-            navigationController?.pushViewController(scoreVC, animated: true)
-        }
-    }
 }
 
 extension QuizCoordinator: ResultsDelegate {
     func userDidReset() {
         flowDelegate?.didFinishQuiz()
+        
     }
 }
