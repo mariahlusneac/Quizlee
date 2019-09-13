@@ -2,7 +2,7 @@
 //  Breed+CoreDataProperties.swift
 //  Quizlee
 //
-//  Created by Maria Hlusneac on 04/09/2019.
+//  Created by Maria Hlusneac on 12/09/2019.
 //  Copyright © 2019 Endava Internship 2019. All rights reserved.
 //
 //
@@ -18,7 +18,7 @@ extension Breed {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var image: String?
+    @NSManaged public var image: NSData?
     @NSManaged public var has: NSSet?
 
 }
